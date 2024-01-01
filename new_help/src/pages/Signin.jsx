@@ -19,7 +19,7 @@ const Signin = () => {
                           alt="logo"
                         />
                         <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                          We are The Lotus Team
+                          ASSIST-PRO
                         </h4>
                       </div>
   
@@ -29,7 +29,7 @@ const Signin = () => {
                         <div className="relative mb-4" data-te-input-wrapper-init>
                           <input
                             type="text"
-                            className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            className="border-b focus:border-purple-500 focus:outline-none peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleFormControlInput1"
                             placeholder="Username"
                           />
@@ -45,7 +45,7 @@ const Signin = () => {
                         <div className="relative mb-4" data-te-input-wrapper-init>
                           <input
                             type="password"
-                            className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            className="border-b focus:border-purple-500 focus:outline-none peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleFormControlInput11"
                             placeholder="Password"
                           />
@@ -97,19 +97,15 @@ const Signin = () => {
                     className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
                     style={{
                       background:
-                        'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
+                      'linear-gradient(to right, rgb(165, 180, 252), rgb(192, 132, 252))',
                     }}
                   >
                     <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                       <h4 className="mb-6 text-xl font-semibold">
-                        We are more than just a company
+                      Fast Ticket Opening
                       </h4>
                       <p className="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
+                      Optimize your support management with AssistPro and experience a new era of efficiency and user satisfaction. Simplify support, resolve issues quickly, and keep your customers satisfied with AssistPro.
                       </p>
                     </div>
                   </div>
