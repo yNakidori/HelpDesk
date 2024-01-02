@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.css';
 import Sigin from './pages/Signin';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import toggle from './assets/toggle-svgrepo-com.svg';
 
 function App() {
 
@@ -9,11 +10,12 @@ function App() {
   function toggleDarkMode() {
     setDarkMode(prevDarkMode => !prevDarkMode)
   }
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <nav className="grid grid-cols-2 w-full place-content-between items-center">
             <h4>Rev 1.0</h4>
-            <img src="./assets/toggle-icon-dark.svg" />
+            <img src={toggle} className="w-8 h-8 text-yellow" alt="Toggle Icon"/>
         </nav>
       <div className="min-h-screen flex flex-col items-center justify-center">
       <Sigin />
