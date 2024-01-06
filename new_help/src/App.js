@@ -1,6 +1,8 @@
 import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './styles.css';
 import Sigin from './pages/Signin';
+import Homepage from './pages/Homepage'; 
 import Footer from './components/Footer';
 import toggle from './assets/toggle-svgrepo-com.svg';
 
@@ -10,6 +12,8 @@ function App() {
   function toggleDarkMode() {
     setDarkMode(prevDarkMode => !prevDarkMode)
   }
+
+  const isAuthenticated = true; 
   
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
