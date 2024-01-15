@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes themeSwitchAnimation {
+    to {
+      r: 5;
+    }
+  }
+
+.dark{
+    background-color: #1a202c;
+    color: #fff
+}
+
+.dark a {
+    color: #3498db
+}
+
+.dark button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.animate-theme-switch{
+    animation: themeSwitchAnimation 0.5s ease-in-out forwards;
+  }

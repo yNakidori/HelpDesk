@@ -1,28 +1,36 @@
-import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import './styles.css';
-import Sigin from './pages/Signin';
-import Homepage from './pages/Homepage'; 
-import Footer from './components/Footer';
-import toggle from './assets/toggle-svgrepo-com.svg';
+// App.js
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import Footer from "./components/Footer";
+import toggle from "./assets/toggle-svgrepo-com.svg";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
 
-  const [darkMode, setDarkMode] = React.useState(true);
-  function toggleDarkMode() {
-    setDarkMode(prevDarkMode => !prevDarkMode)
-  }
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
-  const isAuthenticated = true; 
-  
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div
+      className={`min-h-screen flex flex-col items-center justify-center ${
+        darkMode ? "dark" : ""
+      }`}
+    >
       <nav className="grid grid-cols-2 w-full place-content-between items-center">
-            <h4>Rev 1.0</h4>
-            <img src={toggle} className="w-8 h-8 text-yellow" alt="Toggle Icon"/>
-        </nav>
+        <h4 className="text-1xl font-light font-poppins">Rev 1.0</h4>
+        <img
+          src={toggle}
+          className="w-8 h-8 text-yellow cursor-pointer"
+          alt="Toggle Icon"
+          onClick={toggleDarkMode}
+        />
+      </nav>
       <div className="min-h-screen flex flex-col items-center justify-center">
-      <Sigin />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
       </div>
       <Footer />
     </div>

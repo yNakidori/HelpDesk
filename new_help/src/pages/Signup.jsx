@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Signin = ({ onLogin }) => {
-  const handleLoginClick = () => {
-    onLogin();
-  };
-
+const Signup = () => {
+    
     return (
         <section className="gradient-form h-screen bg-neutral-200 dark:bg-neutral-700">
         <div className="container h-4/5 p-10">
@@ -64,7 +61,7 @@ const Signin = ({ onLogin }) => {
   
                         {/* Submit button */}
                         <div className="mb-12 pb-1 pt-1 text-center">
-                          <button onCLick={handleLoginClick}
+                          <button onCLick={{/*handleLoginClick*/}}
                             className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
                             type="button"
                             data-te-ripple-init
@@ -84,7 +81,6 @@ const Signin = ({ onLogin }) => {
                         {/* Register button */}
                         <div className="flex items-center justify-between pb-6">
                           <p className="mb-0 mr-2">Don't have an account?</p>
-                          <Link to="/signup">
                           <button
                             type="button"
                             className="inline-block rounded border-2 border-danger px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
@@ -93,7 +89,6 @@ const Signin = ({ onLogin }) => {
                           >
                             Register
                           </button>
-                          </Link>
                         </div>
                       </form>
                     </div>
@@ -104,7 +99,7 @@ const Signin = ({ onLogin }) => {
                     className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
                     style={{
                       background:
-                      'linear-gradient(rgb(17, 24, 39), rgb(88, 28, 135), rgb(124, 58, 237))',
+                      'linear-gradient(to right, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248))',
                     }}
                   >
                     <div className="px-4 py-6 text-white md:mx-6 md:p-12">
@@ -125,4 +120,4 @@ const Signin = ({ onLogin }) => {
     )
 }
 
-export default Signin;
+export default Signup;
