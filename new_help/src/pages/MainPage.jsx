@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import CustomScrollbar from '../components/CustomScrollbar';
 
 const MainPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
+     
       <div className="mb-8 flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl font-bold mb-4">WELCOME TO ASSIST-PRO</h1>
-        <p className="text-lg">
+        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">WELCOME TO ASSIST-PRO</h1>
+        <p className="text-lg ">
           Explore the power of AssistPro - Your Ultimate Support Management Solution.
         </p>
       </div>
@@ -26,9 +29,11 @@ const MainPage = () => {
               Log in to your account and explore the features of AssistPro. Stay connected, manage your support tickets, and enjoy a seamless experience with our platform.
             </p>
             <div className="mt-4">
+              <Link to="/signin">
               <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out">
                 Login
               </button>
+                </Link>
             </div>
           </div>
         </div>
@@ -48,20 +53,22 @@ const MainPage = () => {
               Ready to join AssistPro? Register your account now and unlock a world of possibilities. Enjoy fast ticket opening, efficient support management, and enhanced user satisfaction. Your journey with AssistPro begins here!
             </p>
             <div className="mt-4">
+              <Link to="/signup">
               <button className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-700 transition duration-300 ease-in-out">
                 Register
               </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       {/* Additional content outside the main blocks */}
       <div className="mt-8 text-center">
-        <p className="text-xl">Learn more about AssistPro's features and benefits.</p>
-        <a href="#" className="text-blue-500 hover:underline">
-          Explore Now
-        </a>
-      </div>
+  <p className="text-xl">Learn more about AssistPro's features and benefits.</p>
+  <Link to="/about" className="text-blue-500 hover:underline">
+    Explore Now
+  </Link>
+</div>
     </div>
   );
 };
